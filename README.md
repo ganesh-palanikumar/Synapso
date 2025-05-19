@@ -2,7 +2,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/synapso.svg)](https://pypi.org/project/synapso/)
 [![Development Status](https://img.shields.io/badge/status-active-yellowgreen.svg)](#)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](#)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](#)
 [![License: Proprietary](https://img.shields.io/badge/license-proprietary-red.svg)](#license)
 [![Project Stage: Pre-MVP](https://img.shields.io/badge/stage-pre--MVP-orange)](#)
 [![Last Commit](https://img.shields.io/github/last-commit/ganesh-palanikumar/synapso)](https://github.com/ganesh-palanikumar/synapso/commits/main)
