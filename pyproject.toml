@@ -1,6 +1,6 @@
 [project]
 name = "synapso"
-version = "0.1.0"
+version = "0.1.1"
 description = "Synapso: local-first semantic search and knowledge cortex for markdown and text files"
 readme = "README.md"
 requires-python = ">=3.8"
