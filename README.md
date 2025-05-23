@@ -1,106 +1,67 @@
 # Synapso
 
-[![PyPI version](https://img.shields.io/pypi/v/synapso.svg)](https://pypi.org/project/synapso/)
-[![Development Status](https://img.shields.io/badge/status-active-yellowgreen.svg)](#)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](#)
-[![License: Proprietary](https://img.shields.io/badge/license-proprietary-red.svg)](#license)
+**Zero-trust. Local-first. Built in the open.**
+
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://opensource.org/license/apache-2-0)
+[![Development Status](https://img.shields.io/badge/status-active%20development-yellow)](https://github.com/ganeshpalanikumar/synapso)
 [![Project Stage: Pre-MVP](https://img.shields.io/badge/stage-pre--MVP-orange)](#)
+[![Built in Public](https://img.shields.io/badge/built%20in-public-purple)](https://github.com/ganesh-palanikumar/synapso)
 [![Last Commit](https://img.shields.io/github/last-commit/ganesh-palanikumar/synapso)](https://github.com/ganesh-palanikumar/synapso/commits/main)
 
-**Synapso** is a local-first, privacy-focused semantic search engine for your personal knowledge base. It’s built to work seamlessly with `.txt` and `.md` files, making it ideal for Obsidian, Logseq, and other markdown-based note-taking workflows.
+**Keywords:** `semantic-search` `local-first` `privacy` `knowledge-management` `vector-database` `llm` `embeddings` `python` `sqlite` `cli` `markdown` `plain-text` `zero-trust` `open-source`
 
-Synapso enables semantic search over local documents without sending data to the cloud. Your ideas stay on your machine — but your ability to find and connect them gets smarter.
+**Synapso** is a privacy-conscious knowledge system designed to bring **semantic search** to your plain text notes (`.txt`, `.md`)—**without uploading anything anywhere**.
 
----
-
-## 🚀 Why Synapso?
-
-- **Local-First:** Your data never leaves your machine by default.
-- **Markdown-Native:** Works with plain `.md` and `.txt` files.
-- **CLI-Focused:** Designed for developers and power users who prefer terminal workflows.
-- **Modular:** Future-ready architecture to support Bring Your Own Model (BYOM), file watchers, and custom storage backends.
-- **Open-Core:** Core is open source. Future monetization will be built around multi-device and premium features.
+It's built for people who care about **control, clarity, and clean architecture**.
 
 ---
 
-## 🧠 Project Vision
+## 🚧 Current Status: Rebuilding from Scratch
 
-Synapso aims to become a trusted, local alternative to cloud-based knowledge systems. The goal is to build an extensible foundation for semantic search that integrates with your existing tools, works offline, and respects your privacy.
+Synapso has been rebooted as of version `0.2.0`.
+
+The goal is to build a **fast, minimal, inspectable system** that:
+- Runs locally with zero network chatter
+- Indexes `.txt` and `.md` files
+- Embeds them using LLM-powered chunkers
+- Stores everything in your local vector store
+- Keeps logs you can read, audit, and trust
+
+No cloud sync. No hidden calls. No black boxes.
 
 ---
 
-## 🔧 Installation
+## 📦 Installation
 
 ```bash
 pip install synapso
+
 ```
 
-> Requires Python 3.9+
+## 🧠 Architecture (WIP)
 
----
+Synapso would be completely local, with zero network chatter. It would use sqlite dbs for both relational and vector storage. The querying interface would be CLI. Later, I am planning to include a local web GUI and maybe a Mac app.
 
-## 🛠️ Usage (Coming Soon)
+## 🛠 Philosophy
 
-The CLI will follow this general structure:
+Synapso is meant to be a local-first zero-trust privacy-aware interface to query and 'talk' to your knowledge base. As such, it does not make sense to build it behind closed doors. As a result, I am building Synapso in the open. Every line, every commit, every bad decision : it is all out there for anyone to see. 
 
-```bash
-synapso cortex add /path/to/notes
-synapso cortex index
-synapso cortex list
-synapso query "What did I write about knowledge graphs?"
-```
+This is not just a product. It is a journal of how I think as a builder and engineer. 
 
----
+## 📖 Weekly Devlog
 
-## 🗺️ Roadmap
+Every Wednesday, I will try to post a new update on [HackerNoon](https://hackernoon.com/u/ganeshpalanikumar) and [Medium](https://medium.com/me/stories/drafts). Stay tuned! The first log is coming up on May 28, 2025!
 
-| Version | Feature                                       | Status        |
-|---------|-----------------------------------------------|----------------|
-| v0.1.0  | Namespace claimed, CLI scaffold               | ✅ Released     |
-| v0.1.1  | Bug fixes, CLI polishing                      | 🚧 In progress |
-| v0.2.0  | File watcher                                  | Planned        |
-| v0.3.0  | Data stores and corresponding models          | Planned        |
-| v0.4.0  | Chunking, vectorization for `.txt`            | Planned        |
-| v0.5.0  | Markdown file support                         | Planned        |
-| v0.6.0  | CLI search/query interface                    | Planned        |
+## 🤝 License & Contributions
+- This project is licensed under [Apache 2.0](https://opensource.org/license/apache-2-0)
+- The source code is open.
+- Contributions are closed - this may change later.
+- For now, feel free to explore, fork, or follow along.
 
----
+## ✉️ Contact
+[ganesh@synapso.xyz](<mailto:ganesh@synapso.xyz>)
 
-## 📦 PyPI
+[Linkedin](https://www.linkedin.com/in/ganesh-palanikumar/)
 
-Available on PyPI: [https://pypi.org/project/synapso/](https://pypi.org/project/synapso/)
-
-Install using:
-
-```bash
-pip install synapso
-```
-
----
-
-## 🪪 License
-
-## 🪪 License
-
-This project is currently **closed source and proprietary**.
-
-> ⚠️ Synapso is not open for public use or contribution at this time. All code is protected by a custom license that prohibits copying, modification, distribution, or reuse without explicit permission.
-
-If the project becomes open-source post-MVP, a proper license (such as MIT or MPL-2.0) will be chosen and applied.
-
-See the [`LICENSE`](./LICENSE) file for full terms.
-
----
-
-## 📓 Devlog & Documentation
-
-Full devlog and vision notes are maintained in Obsidian.  
-For now, see: [Notion roadmap site (coming soon)](#)
-
----
-
-## 💬 Feedback & Contributions
-
-Feedback is welcome! Contributions will open post-MVP (~v0.6.0). Until then, feel free to watch the repo and follow along.
-
----
+If you're into privacy-first tools, semantic search, or just want to see a system built line by line—come along for the ride.

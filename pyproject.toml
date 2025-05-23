@@ -1,29 +1,21 @@
 [project]
 name = "synapso"
-version = "0.1.1"
-description = "Synapso: local-first semantic search and knowledge cortex for markdown and text files"
+version = "0.2.0"
+description = "Synapso: local-first semantic search for your personal knowledge base"
 readme = "README.md"
-requires-python = ">=3.8"
-license = { file = "LICENSE" }
 authors = [
-    { name = "Ganesh Palanikumar" }
+    { name = "Ganesh Palanikumar", email = "ganesh@synapso.xyz" }
 ]
-dependencies = [
-    "typer[all]>=0.9.0",
-    "pgvector",
-    "sqlalchemy",
-    "watchdog",
-    "psycopg[binary]",
-    "fastapi",
-    "uvicorn",
-    "tqdm"
-]
+license = { text = "Apache-2.0" }
+keywords = ["semantic search", "local-first", "zero-trust", "obsidian", "privacy"]
+requires-python = ">=3.8"
 
-[project.scripts]
-synapso = "synapso.__main__:app"
-
+[project.urls]
+Homepage   = "https://github.com/ganesh-palanikumar/Synapso"
+Repository = "https://github.com/ganesh-palanikumar/Synapso"
+Devlog     = "https://hackernoon.com/u/ganesh-palanikumar"
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
